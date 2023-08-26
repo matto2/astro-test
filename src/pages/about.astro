@@ -34,56 +34,64 @@ import Card from "../components/Card.astro";
       </defs>
     </svg>
     <h1>Hi! 👋🏼 <span class="text-gradient">I'm Matt</span></h1>
-    <p><a href="/">Back</a></p>
-    <img class="about-me" src="/img/me-in-circle_purple.png" />
-    <p>
-      I am a lifelong artist, born in San Francisco and raised in Santa Cruz. I
-      usually paint with acrylics on board or canvas. Surfing and the coast have
-      been favorite subjects of my art ever since I was young. I draw
-      inspiration from trips to Northern California, Big Sur, Hawaii, and
-      beyond. Great art, excellent design, and web publishing are all passions
-      of mine. I co-founded The Juice, a regional surfing magazine, and have
-      designed a few book covers. Currently, I work as a Digital Product
-      Designer. I can often be found in <s>Santa Cruz</s> Monterey surfing or hiking/biking
-      around town, up the coast, or in the mountains. Here's me <a
-        href="/img/me-surfing_2019.mp4">playing</a
-      > in the waves.
-    </p>
-    <h4>Links</h4>
-    <ul>
-      <li>
-        <a href="https://minnieoleary.com/">minnieoleary.com</a> is a site I made
-        to keep my Mom's music available to hear and buy the sheet music - especially
-        <em> Songs of Self Esteem</em>
-      </li>
-      <li>
-        <a href="https://keeptheapostrophe.com/">keeptheapostrophe.com</a> is a site
-        I made with my Dad to make some noise and help fix the issues folks with
-        apostrophes (and anything else "non-standard") in their names face when using
-        the web, signing up for apps and services, buying plane tickets, etc...
-      </li>
-      <li>
-        <a href="https://medium.com/@mattosurf">Medium:</a>
-        <em>Very</em> occasional writings about surfing, design, etc.
-      </li>
+    <div class="max-w-prose container mx-auto">
+      <p><a href="/">Back</a></p>
+    </div>
+    <img
+      class="about-me container mx-auto max-w-md"
+      src="/img/me-in-circle_purple.png"
+    />
+    <div class="containter max-w-prose mx-auto space-y-3">
+      <p>
+        I am a lifelong artist, born in San Francisco and raised in Santa Cruz.
+        I usually paint with acrylics on board or canvas. Surfing and the coast
+        have been favorite subjects of my art ever since I was young. I draw
+        inspiration from trips to Northern California, Big Sur, Hawaii, and
+        beyond. Great art, excellent design, and web publishing are all passions
+        of mine. I co-founded The Juice, a regional surfing magazine, and have
+        designed a few book covers. Currently, I work as a Digital Product
+        Designer. I can often be found in <s>Santa Cruz</s> Monterey surfing or hiking/biking
+        around town, up the coast, or in the mountains. Here's me <a
+          href="/img/me-surfing_2019.mp4">playing</a
+        > in the waves.
+      </p>
+      <h4>Links</h4>
+      <ul class="list-disc list-inside md:list-outside space-y-3">
+        <li>
+          <a href="https://minnieoleary.com/">minnieoleary.com</a> is a site I made
+          to keep my Mom's music available to hear and buy the sheet music - especially
+          <em> Songs of Self Esteem</em>
+        </li>
+        <li>
+          <a href="https://keeptheapostrophe.com/">keeptheapostrophe.com</a> is a
+          site I made with my Dad to make some noise and help fix the issues folks
+          with apostrophes (and anything else "non-standard") in their names face
+          when using the web, signing up for apps and services, buying plane tickets,
+          etc...
+        </li>
+        <li>
+          <a href="https://medium.com/@mattosurf">Medium:</a>
+          <em>Very</em> occasional writings about surfing, design, etc.
+        </li>
 
-      <li>
-        <a href="https://norcaljuice.wiki"
-          >The Juice - Northern California's Surf Magazine</a
-        > ... a surf mag I created with Eric Mitchell a long time ago. This site
-        is a work-in-progress. Plan is to make all the old back issues from the available
-        for sale. Ping me if that is of interest to you!!
-      </li>
-      <li>
-        <a href="https://mattoleary.design">mattoleary.design</a> My Digital Product
-        Design portfolio site.
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/matt-oleary/">My LinkedIn</a>
-      </li>
-    </ul>
+        <li>
+          <a href="https://norcaljuice.wiki"
+            >The Juice - Northern California's Surf Magazine</a
+          > ... a surf mag I created with Eric Mitchell a long time ago. This site
+          is a work-in-progress. Plan is to make all the old back issues from the
+          available for sale. Ping me if that is of interest to you!!
+        </li>
+        <li>
+          <a href="https://mattoleary.design">mattoleary.design</a> My Digital Product
+          Design portfolio site.
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/matt-oleary/">My LinkedIn</a>
+        </li>
+      </ul>
 
-    <a href="/">Back</a>
+      <a href="/">Back</a>
+    </div>
   </main>
 
   <!-- Update: I added a page to share some [~~fun random~~ self-indulgent things](/fun). -->
@@ -93,11 +101,9 @@ import Card from "../components/Card.astro";
   main {
     margin: auto;
     padding: 1rem;
-    width: 800px;
+
     /* max-width: calc(100% - 2rem); */
     color: white;
-    font-size: 20px;
-    line-height: 1.6;
   }
   .astro-a {
     position: absolute;
@@ -108,7 +114,7 @@ import Card from "../components/Card.astro";
     height: auto;
     z-index: -1;
   }
-  h1 {
+  main h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1;
