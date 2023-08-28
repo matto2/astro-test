@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Lightbox from "../components/Lightbox.svelte";
 ---
 
 <Layout title="O'Leary Studios">
@@ -25,174 +25,8 @@ import Card from "../components/Card.astro";
           >
         </p>
       </p>
-
-      <!-- 
-      <ul role="list" class="link-card-grid">
-        <Card
-          href="https://docs.astro.build/"
-          title="Documentation"
-          body="Learn how Astro works and explore the official API docs."
-        />
-        <Card
-          href="https://astro.build/integrations/"
-          title="Integrations"
-          body="Supercharge your project with new frameworks and libraries."
-        />
-        <Card
-          href="https://astro.build/themes/"
-          title="Themes"
-          body="Explore a galaxy of community-built starter themes."
-        />
-        <Card
-          href="https://astro.build/chat/"
-          title="Community"
-          body="Come say hi to our amazing Discord community. ❤️"
-        />
-      </ul> -->
     </div>
-
-    <div
-      id="gallery"
-      class="container mx-auto grid gap-2 lg:gap-6 lg:grid-cols-2 grid-flow-dense"
-    >
-      <a href="/img/anini_beach.jpg"
-        ><img src="/img/anini_beach.jpg" alt="Anini beach" title="" />
-        <br />
-        <p>Anini beach<span style="color:var(--primary-color);"> </span></p>
-      </a>
-
-      <a href="/img/barrel_view.jpg">
-        <img
-          src="/img/barrel_view.jpg"
-          alt="The view of surfing in the barrel"
-        />
-        <br />
-        <p>Barrel view<span style="color:var(--primary-color);"> </span></p>
-      </a>
-
-      <a href="/img/Stornetta_lands.jpg">
-        <img src="/img/Stornetta_lands.jpg" alt="Stornetta_lands" />
-        <br />
-        <p>Stornetta Lands</p>
-      </a>
-
-      <a href="/img/greyhound-rock.jpg">
-        <img src="/img/greyhound-rock.jpg" alt="greyhound-rock" />
-        <br />
-        <p>Greyhound Rock</p>
-      </a>
-
-      <a href="/img/polihale.jpg">
-        <img src="/img/polihale.jpg" alt="Polihale" />
-        <br />
-        <p>Polihale</p>
-      </a>
-
-      <a href="/img/tunnels_beach.jpg">
-        <img src="/img/tunnels_beach.jpg" alt="tunnels_beach" />
-        <br />
-        <p>Tunnels beach <span style="color:var(--primary-color);"></span></p>
-      </a>
-
-      <a href="/img/beanhollow5_3560.jpg">
-        <img src="/img/beanhollow5_3560.jpg" alt="beanhollow5_3560" />
-        <br />
-        <p>Cove at Bean Hollow</p>
-      </a>
-
-      <a href="/img/breaching_in_the_bay.jpg">
-        <img src="/img/breaching_in_the_bay.jpg" alt="breaching_in_the_bay" />
-        <br />
-        <p>Breaching Whale</p>
-      </a>
-
-      <a href="/img/china_cove_rock.jpg">
-        <img src="/img/china_cove_rock.jpg" alt="china_cove_rock" />
-        <br />
-        <p>Rock at Chine Cove</p>
-      </a>
-
-      <a href="/img/dolphins.jpg">
-        <img src="/img/dolphins.jpg" alt="dolphins" />
-        <br />
-        <p>Dolphins</p>
-      </a>
-
-      <a href="/img/fullers_3558.jpg">
-        <img src="/img/fullers_3558.jpg" alt="fullers_3558" />
-        <br />
-        <p>
-          Big Sur Surf Spot<span style="color:var(--primary-color);"> </span>
-        </p>
-      </a>
-
-      <a href="/img/getchells.jpg">
-        <img src="/img/getchells.jpg" alt="getchells" />
-        <br />
-        <p>
-          Getchells Cove <span style="color:var(--primary-color);"> </span>
-        </p>
-      </a>
-
-      <a href="/img/its_3559.jpg">
-        <img src="/img/its_3559.jpg" alt="its_3559" />
-        <br />
-        <p>Its Beach</p>
-      </a>
-
-      <a href="/img/itsbeach_cave_3571.jpg">
-        <img src="/img/itsbeach_cave_3571.jpg" alt="itsbeach_cave_3571" />
-        <br />
-        <p>Its Beach Cove</p>
-      </a>
-
-      <a href="/img/lane_moon_3568.jpg">
-        <img src="/img/lane_moon_3568.jpg" alt="lane_moon_3568" />
-        <br />
-        <p>Moon over Steamer Lane</p>
-      </a>
-
-      <a href="/img/lemon_3578.jpg">
-        <img src="/img/lemon_3578.jpg" alt="lemon_3578" />
-        <br />
-        <p>Lemon still life</p>
-      </a>
-
-      <a href="/img/sweet_view.jpg">
-        <img src="/img/sweet_view.jpg" alt="sweet_view" />
-        <br />
-        <p>Sweet view</p>
-      </a>
-
-      <a href="/img/the_lane_at_sunset.jpg">
-        <img src="/img/the_lane_at_sunset.jpg" alt="the_lane_at_sunset" />
-        <br />
-        <p>The Lane at sunset</p>
-      </a>
-
-      <a href="/img/off_the_lip_3.jpg">
-        <img src="/img/off_the_lip_3.jpg" alt="off_the_lip_3" />
-        <br />
-        <p>Off the lip</p>
-      </a>
-
-      <a href="/img/pipe.jpg">
-        <img src="/img/pipe.jpg" alt="pipe" /><br />
-        <p>Pipeline</p>
-      </a>
-
-      <a href="/img/sunset__jet_700px.jpg">
-        <img src="/img/sunset__jet_700px.jpg" alt="sunset__jet_700px" />
-        <br />
-        <p>Sunset and jet</p>
-      </a>
-
-      <a href="/public/img/waves_moon_3569.jpg">
-        <img src="/img/waves_moon_3569.jpg" alt="waves_moon_3569" />
-        <br />
-        <p>Waves and moon</p>
-      </a>
-    </div>
+    <Lightbox client:load />    
   </main>
 </Layout>
 
@@ -253,4 +87,5 @@ import Card from "../components/Card.astro";
     gap: 2rem;
     padding: 0;
   }
+
 </style>
