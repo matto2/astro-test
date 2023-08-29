@@ -1,0 +1,134 @@
+<script>
+  import { onMount } from 'svelte';
+  const images = [
+    {
+      img: '/img/anini_beach.jpg',
+      title: 'Anini beach',
+      description: 'Anini beach',
+    },
+    {
+      img: '/img/barrel_view.jpg',
+      title: 'The view of surfing in the barrel',
+      description: 'Barrel view',
+    },
+    {
+      img: '/img/Stornetta_lands.jpg',
+      title: 'Stornetta Lands',
+      description: 'Stornetta Lands',
+    },
+    {
+      img: '/img/greyhound-rock.jpg',
+      title: 'Greyhound Rock',
+      description: 'Greyhound Rock',
+    },
+    {
+      img: '/img/polihale.jpg',
+      title: 'Polihale',
+      description: 'Polihale',
+    },
+    {
+      img: '/img/tunnels_beach.jpg',
+      title: 'Tunnels beach',
+      description: 'Tunnels beach',
+    },
+    {
+      img: '/img/beanhollow5_3560.jpg',
+      title: 'Cove at Bean Hollow',
+      description: 'Cove at Bean Hollow',
+    },
+    {
+      img: '/img/breaching_in_the_bay.jpg',
+      title: 'Breaching Whale',
+      description: 'Breaching Whale',
+    },
+    {
+      img: '/img/china_cove_rock.jpg',
+      title: 'Rock at Chine Cove',
+      description: 'Rock at Chine Cove',
+    },
+    {
+      img: '/img/dolphins.jpg',
+      title: 'Dolphins',
+      description: 'Dolphins',
+    },
+    {
+      img: '/img/fullers_3558.jpg',
+      title: 'Big Sur Surf Spot',
+      description: 'Big Sur Surf Spot',
+    },
+    {
+      img: '/img/getchells.jpg',
+      title: 'Getchells Cove',
+      description: 'Getchells Cove',
+    },
+    {
+      img: '/img/its_3559.jpg',
+      title: 'Its Beach',
+      description: 'Its Beach',
+    },
+    {
+      img: '/img/itsbeach_cave_3571.jpg',
+      title: 'Its Beach Cove',
+      description: 'Its Beach Cove',
+    },
+    {
+      img: '/img/lane_moon_3568.jpg',
+      title: 'Moon over Steamer Lane',
+      description: 'Moon over Steamer Lane',
+    },
+    {
+      img: '/img/lemon_3578.jpg',
+      title: 'Lemon still life',
+      description: 'Lemon still life',
+    },
+    {
+      img: '/img/sweet_view.jpg',
+      title: 'Sweet view',
+      description: 'Sweet view',
+    },
+    {
+      img: '/img/the_lane_at_sunset.jpg',
+      title: 'The Lane at sunset',
+      description: 'The Lane at sunset',
+    },
+    {
+      img: '/img/off_the_lip_3.jpg',
+      title: 'Off the lip',
+      description: 'Off the lip',
+    },
+    {
+      img: '/img/pipe.jpg',
+      title: 'Pipeline',
+      description: 'Pipeline',
+    },
+    {
+      img: '/img/sunset__jet_700px.jpg',
+      title: 'Sunset and jet',
+      description: 'Sunset and jet',
+    },
+    {
+      img: '/img/waves_moon_3569.jpg',
+      title: 'Waves and moon',
+      description: 'Waves and moon',
+    },
+  ];
+
+  // console.log('lightbox loaded');
+  // console.log(JSON.stringify(images, null, 2));
+  onMount(() => {
+
+  });
+</script>
+
+<div
+  id="gallery"
+  class="container mx-auto grid gap-2 lg:gap-6 lg:grid-cols-2 grid-flow-dense"
+>
+  {#each images as image}
+    <a href={image.img} title={image.title} >
+      <img src={image.img} alt={image.title} title={image.title} />
+      <br />
+      <p>Anini beach<span style="color:var(--primary-color);" /></p>
+    </a>
+  {/each}
+</div>
