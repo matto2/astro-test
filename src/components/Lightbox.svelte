@@ -128,7 +128,7 @@
     <a href={image.img} title={image.title} >
       <img src={image.img} alt={image.title} title={image.title} />
       <br />
-      <p>Anini beach<span style="color:var(--primary-color);" /></p>
+      <p>{image.title}<span style="color:var(--primary-color);" /></p>
     </a>
   {/each}
 </div>
